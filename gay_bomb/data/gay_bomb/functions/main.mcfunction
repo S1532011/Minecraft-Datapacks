@@ -1,0 +1,1 @@
+execute as @e[type=creeper, tag=gay_bomb] at @s run function gay_bomb:explode

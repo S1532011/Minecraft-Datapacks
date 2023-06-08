@@ -81,7 +81,7 @@
       [
         "minecraft:glow_lichen",
         "minecraft:forest_flowers",
-        "fruit_trees:fruit_tree_placer",
+        "fruitcake:fruitcake_placer",
         "minecraft:flower_default",
         "minecraft:patch_grass_forest",
         "minecraft:brown_mushroom_normal",

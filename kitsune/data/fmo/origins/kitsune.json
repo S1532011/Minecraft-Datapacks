@@ -1,0 +1,23 @@
+{
+    "powers": [
+        "origins:fall_immunity",
+        "origins:no_shield",
+        "origins:cat_vision",
+        "fmo:yummy_berries",
+        "fmo:yummy_glow_berries",
+		"fmo:yummy_chicken",
+		"fmo:energetic",
+		"fmo:pounce",
+		"fmo:big_brother",
+		"fmo:bite_sized",
+		"fmo:sly_fox",
+		"fmo:fox",
+		"fmo:speedy",
+        "fmo:careful_gatherer"
+    ],
+    "icon": "minecraft:sweet_berries",
+    "order": 4,
+    "impact": 1,
+    "name":"Kitsune",
+    "description": "It's like a fox but more kawaii!! (and powerful)"
+  }
