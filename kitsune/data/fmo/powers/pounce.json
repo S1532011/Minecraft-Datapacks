@@ -1,22 +1,42 @@
 {
-  "type": "origins:launch",
-  "cooldown": 45,
-  "hud_render": {
-    "should_render": true,
-    "sprite_location": "origins:textures/gui/resource_bar.png",
-    "bar_index": 2,
-    "condition": {
-      "value": true,
-      "type": "origins:constant",
-      "inverted": false
-    }
-  },
-  "sound": "minecraft:entity.fox.ambient",
-  "speed": 1,
-  "key": {
-    "key": "key.origins.primary_active",
-    "continuous": true
-  },
-  "name": "Pounce",
-  "description": "You can jump up high and pounce something by pressing your primary ability key."
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [{
+				"type": "origins:execute_command",
+				"command": "particle minecraft:cloud ~ ~ ~ 0.5 0 0.5 0.2 20 normal",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "playsound minecraft:entity.fox.ambient player @a[distance=10] ~ ~ ~ 1 1 1",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:add_velocity",
+				"z": 0.6,
+				"space": "local"
+			},
+			{
+				"type": "origins:add_velocity",
+				"y": 0.6
+			},
+			{
+				"type": "origins:exhaust",
+				"amount": 1
+			}
+		]
+	},
+	"key": {
+		"key": "key.origins.primary_active",
+		"continuous": false
+	},
+	"cooldown": 32,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+		"bar_index": 23
+	},
+	"name": "Pounce.",
+	"description": "You have a high jump that can be activated by pressing your primary button. This can double your damage if you land a critical hit right before landing. This ability has a relatively short cooldown and consumes half a hunger bar.."
 }
